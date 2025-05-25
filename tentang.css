@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+section{
+    padding: 40px;
+}
+
+p{
+    margin-left: 100px;
+    margin-top: 80px;
+}

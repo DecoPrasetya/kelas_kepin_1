@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffe7;
+}
+
+section{
+    justify-items: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.dairy-cont{
+    height: 77vh;
+    margin-top: 30px;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0 3vh;
+    overflow-y: auto;
+    background-color: #ffffd7;
+}
+
+.all{
+    height: 85vh;
+}
+
+.dairy-card{
+    margin-bottom: 3vh;
+    border: 1px solid #d1c8a6;
+    display: grid;
+    padding: 10px;
+    position: relative;
+    max-width: 70%;
+    align-items: center;
+    background-color: #fffcbb;
+    color: #3b3629;
+    word-wrap: break-word;
+    grid-template-columns: 7% auto;
+
+    
+    
+}
+
+.sent{
+    margin-left: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.receiver{
+    margin-right: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.pic img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.user-info{
+    font-size: 20px;
+    font-weight: bold;
+    color: #a3936c;
+}
+
+.dairy{
+    color: #a3936c;
+}
+
+
+
+
+/* form */
+
+form{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    align-items: center;
+
+}
+
+
+
+input{
+    height: 40px;
+    width: 95%;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    outline: none;
+}
+
+input::placeholder{
+    color: #a3936c;
+}
+
+button{
+    height: 55px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* resposive */
+
+@media(max-width: 1444px){
+    .dairy-card{
+        grid-template-columns: 8% auto;
+    }
+}
+
+@media(max-width: 1245px){
+    .dairy-card{
+        grid-template-columns: 9% auto;
+    }
+}
+
+@media(max-width: 1070px){
+    .dairy-card{
+        grid-template-columns: 11% auto;
+    }
+}
+
+@media(max-width: 870px){
+    .dairy-card{
+        grid-template-columns: 13% auto;
+    }
+}
+
+@media(max-width: 750px){
+    .dairy-card{
+        grid-template-columns: 15% auto;
+    }
+}
+
+@media(max-width: 660px){
+    .dairy-card{
+        grid-template-columns: 17% auto;
+    }
+}
+
+@media(max-width: 550px){
+    .dairy-card{
+        grid-template-columns: 19% auto;
+    }
+}
+

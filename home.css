@@ -1,0 +1,89 @@
+
+main {
+    z-index: 1;
+    margin-top: 15.75rem;
+    transition: 1s;
+}
+
+section {
+    display: flex;
+    width: 100pv;
+    margin: 0 auto;
+    justify-content:space-around;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.judul {
+    color: #fff;
+    margin-top: 60px;
+    margin-left: 60px;
+    max-width: 50rem;
+    transition: margin-top 1s ease;
+}
+
+section img {
+    scale: 1.4;
+    padding-right: 100px;
+    transition: margin-top 1s ease;
+    transition: scale .2s ;
+    position: relative;
+}
+
+section img:hover {
+    scale: 1.5;
+    margin-bottom: px;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+}
+
+.judul h1{
+    font-size: 1rem;
+}
+
+.judul h2{
+    font-size: 3rem;
+    color: orange;
+}
+
+.judul p{
+    font-size: 1rem;
+}
+
+@media(max-width: 992px) {
+    main {
+        margin-top: 8rem;
+    }
+    
+    section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .judul {
+        width: 90%;
+        margin-top: 3rem;
+        padding: 0.1rem;
+    }
+
+    section img {
+        margin-top: 4rem;
+        scale: 1;
+        padding-right: 50px;
+    }
+
+    section img:hover {
+        scale: 0.99;
+        margin-bottom: px;
+        animation: float 2s ease-in-out infinite;
+    }
+}
